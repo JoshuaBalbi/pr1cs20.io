@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Hours</title>
+  <link rel="stylesheet" href=css/stylesheet.css>
+  <script>
+      var dropdownShown = false;
+      function showDropdown() {
+            let dropButton = document.getElementsByClassName("dropdownElems")[0];
+            if (!dropdownShown) {
+                dropButton.style.display = "block";
+                dropdownShown = true;
+            } else {
+                dropButton.style.display = "none";
+                dropdownShown = false;
+            }
+      }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+        background-image: url('images/check.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+</style>
+
+<body>
+
+<div class="navbar">
+  <a class="logo" href="./index.html" ><img src="images/flapjax.jpg" alt="Flapjax" height="66px"></a>
+  <a class="page" href=./order.html>Order</a>
+  <a class="page" href=./contact.html>Contact</a>
+  <a class="page active" href=./hours.html>Hours</a>
+  <a class="page" href=./menu.html>Menu</a>
+  <a class="page" href=./reservation.html>Reservation</a>
+  <a class="page" href=./aboutus.html>About Us</a>
+  <div class="dropdown">
+      <button class="hamburger" onclick="showDropdown()">&#9776;</button>
+      <div class="dropdownElems">
+          <a href="./order.html">Order</a>
+          <a href=./contact.html>Contact</a>
+          <a href=./hours.html>Hours</a>
+          <a href=./menu.html>Menu</a>
+          <a href=./reservation.html>Reservation</a>
+          <a href=./aboutus.html>About Us</a>
+      </div>
+  </div>
+</div>
+<br/>
+<br/>
+<h1>Restaurant Hours</h1>
+<h2>Regular hours</h2>
+<ul>
+    <li>Monday: 6:00AM - 8:00 PM</li>
+    <li>Tuesday:  6:00AM - 8:00 PM</li>
+    <li>Wednesday:  6:00AM - 8:00 PM</li>
+    <li>Thursday:  6:00AM - 8:00 PM</li>
+    <li>Friday:  6:00AM - 6:00 PM</li>
+    <li>Saturday: 6:00AM - 4:00 PM</li>
+    <li>Sunday: 6:00AM - 12:00 PM</li>
+</ul>
+<h2>Holiday hours</h2>
+<ul>
+    <li>Monday-Thursday: 6:00AM - 4:00 PM</li>
+    <li>Friday: 6:00AM - 2:00 PM</li>
+    <li>Saturday: 6:00AM - 12:00 PM</li>
+    <li>Sunday: Closed</li>
+</ul>
+
+<h2>Holidays recognized</h2>
+<ul>
+    <li>Christmas Day</li>
+    <li>Thanksgiving</li>
+    <li>Memorial Day</li>
+    <li>Veterans Day</li>
+    <li>Easter</li>
+    <li>New Years Day</li>
+    <li>MLK Day</li>
+    <li>July 4th</li>
+    <li>Independence Day</li>
+    <li>Labor Day</li>
+</ul>
+
+
+
+
+
+
+
+<div class="footer">
+  <img src=images/cake.png alt="FlapJax Diner Logo" width="100">
+  <h2>@FlapJax Diner | Powered by GitHub | Created by Melinda Fern, Josh Balbi, Hailey Roover, and Jack Flores</h2>
+</div>
+
+</body>

@@ -1,0 +1,144 @@
+<html>
+<head>
+  <title>Flapjax</title>
+  <link rel="stylesheet" href=css/stylesheet.css>
+  <meta charset="UTF-8">
+  <meta name="description" content="Cambridge Diner">
+  <meta name="keywords" content="FlapJax, Diner, Pancakes">
+  <meta name="author" content="Jack Flores, Joshua Balbi, Melinda Fern, Hailey Roover">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script>
+
+
+    var dropdownShown = false;
+    function showDropdown() {
+          let dropButton = document.getElementsByClassName("dropdownElems")[0];
+          if (!dropdownShown) {
+              dropButton.style.display = "block";
+              dropdownShown = true;
+          } else {
+              dropButton.style.display = "none";
+              dropdownShown = false;
+          }
+    }
+
+    $(document).ready(function () {
+      picture1();
+    });
+
+    function picture1() {
+      $('#pic').fadeIn(500).html('<img src="images/pancakes.jpg" width=95% alt="pancakes"/>').delay(4000).fadeOut(500, function () { picture3(); });
+    }
+
+    function picture2() {
+      $('#pic').fadeIn(500).html('<img src="images/inside.jpg" width=95% alt="inside"/>').delay(4000).fadeOut(500, function () { picture1(); });
+    }
+
+    function picture3() {
+      $('#pic').fadeIn(500).html('<img src="images/breakfast.jpg" width=95% alt="inside"/>').delay(4000).fadeOut(500, function () { picture2(); });
+    }
+
+</script>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+body {
+  /* background-image: ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 20;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif; */
+}
+
+.pic {
+    text-align: right;
+}
+
+</style>
+
+<body>
+
+<div class="navbar">
+  <a class="logo" href="./index.html" ><img src="images/flapjax.jpg" alt="Flapjax" height="66px"></a>
+  <a class="page" href=./order.html>Order</a>
+  <a class="page" href=./contact.html>Contact</a>
+  <a class="page" href=./hours.html>Hours</a>
+  <a class="page" href=./menu.html>Menu</a>
+  <a class="page" href=./reservation.html>Reservation</a>
+  <a class="page" href=./aboutus.html>About Us</a>
+  <div class="dropdown">
+      <button class="hamburger" onclick="showDropdown()">&#9776;</button>
+      <div class="dropdownElems">
+          <a href="./order.html">Order</a>
+          <a href=./contact.html>Contact</a>
+          <a href=./hours.html>Hours</a>
+          <a href=./menu.html>Menu</a>
+          <a href=./reservation.html>Reservation</a>
+          <a href=./aboutus.html>About Us</a>
+      </div>
+  </div>
+</div>
+<br/>
+<br/>
+
+
+<div class="row">
+    <div class="column insmall">
+        <h1> Flap Jax </h1>
+        A family owned diner here to satisfy your culinary needs.
+
+        <p>Welcome to Flapjax Diner! We have been open for over two decades
+            serving classic American breakfast foods and award-winning flapjacks.
+            We are a family friendly establishment with plenty of kid-friendly
+            foods. Come and dine with us any day of the week! See you soon!</p>
+        <p>-Flapjax Team</p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+    <div class="column inbig">
+        <br/>
+        <br/>
+        <div id="pic" class="pic">
+        </div>
+    </div>
+</div>
+
+
+
+
+<br/>
+
+
+
+<div class="footer">
+  <img src=images/cake.png alt="FlapJax Diner Logo" width="100">
+  <h3>@FlapJax Diner | Powered by GitHub | Created by Melinda Fern, Josh Balbi, Hailey Roover, and Jack Flores</h3>
+</div>
+
+</body>

@@ -1,0 +1,163 @@
+<html>
+<head>
+  <title>Menu</title>
+  <link rel="stylesheet" href=css/stylesheet.css>
+  <script>
+      var dropdownShown = false;
+      function showDropdown() {
+            let dropButton = document.getElementsByClassName("dropdownElems")[0];
+            if (!dropdownShown) {
+                dropButton.style.display = "block";
+                dropdownShown = true;
+            } else {
+                dropButton.style.display = "none";
+                dropdownShown = false;
+            }
+      }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+        background-image: url('images/check.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+</style>
+
+<body>
+
+
+
+<div class="navbar">
+  <a class="logo" href="./index.html" ><img src="images/flapjax.jpg" alt="Flapjax" height="66px"></a>
+  <a class="page" href=./order.html>Order</a>
+  <a class="page" href=./contact.html>Contact</a>
+  <a class="page" href=./hours.html>Hours</a>
+  <a class="page active" href=./menu.html>Menu</a>
+  <a class="page" href=./reservation.html>Reservation</a>
+  <a class="page" href=./aboutus.html>About Us</a>
+  <div class="dropdown">
+      <button class="hamburger" onclick="showDropdown()">&#9776;</button>
+      <div class="dropdownElems">
+          <a href="./order.html">Order</a>
+          <a href=./contact.html>Contact</a>
+          <a href=./hours.html>Hours</a>
+          <a href=./menu.html>Menu</a>
+          <a href=./reservation.html>Reservation</a>
+          <a href=./aboutus.html>About Us</a>
+      </div>
+  </div>
+</div>
+<br/>
+<br/>
+
+<center><h1>FlapJax Menu</h1></center>
+
+<div class="row">
+  <div class="column smaller">
+      <center><h2>Build your own Breakfast Plate:</h2></center>
+      <ul>
+          <li>Classic Flapjax</li>
+                <ol>
+                    <li>One -4</li>
+                    <li>Two -7</li>
+                </ol>
+          <li>Blueberry Flapjax</li>
+          <ol>
+              <li>One -5</li>
+              <li>Two -9</li>
+          </ol>
+          <li>Banana Flapjax</li>
+          <ol>
+              <li>One -5</li>
+              <li>Two -9</li>
+          </ol>
+          <li>Fruit bowl -5</li>
+          <li>Hashbrowns -4</li>
+          <li>Toast (rye, wheat, or sourdough) -3</li>
+          <li>Bacon -3</li>
+          <li>Breakfast Sausage -4</li>
+          <li>Oatmeal -4</li>
+          <li>Egg prepared to your choice -2</li>
+    </ul>
+  </div>
+  <div class="column Bigger">
+      <center><h2>Specialty Pancakes:</h2></center>
+      <ul>
+          <li>Apple pie Jax -14</li>
+          <ul>
+              <li>Three fluffy pancakes with baked apples and cinnamon, topped with whipped cream and a graham cracker crumble</li>
+          </ul>
+          <li>Triple Berry Jax -14</li>
+          <ul>
+              <li>Three blueberry pancakes topped with warm raspberry sauce and sprinkles with chopped strawberries</li>
+          </ul>
+          <li>S’mores Jax -14</li>
+          <ul>
+              <li>Three chocolate chip pancakes with marshmallow sauce and grahmcracker crumbles</li>
+          </ul>
+          <li>Savory Jax -16</li>
+          <ul>
+              <li>Three potato pancakes (shredded potato, onion, binded with egg) topped with a fried egg, bacon, and melted cheddar cheese</li>
+          </ul>
+          <li>Banana Nutella Jax -13</li>
+          <ul>
+              <li>Three banana pancakes topped with nutella drizzle</li>
+          </ul>
+          <li>Lemon Ricotta Jax - 15</li>
+          <ul>
+              <li>Three lemony pancakes topped with sugar and whipped ricotta chese</li>
+          </ul>
+          <li>Vegan pancakes -15</li>
+          <ul>
+              <li>Three vegan pancakes with choice of bananas or blueberries</li>
+          </ul>
+      </ul>
+  </div>
+  <div class="column smaller">
+      <center><h2>Beverages:</h2></center>
+      <ul>
+          <li>Coffee -2</li>
+          <li>Milk</li>
+          <ul>
+              <li>Regular -2</li>
+              <li>Chocolate Milk -3</li>
+              <li>Strawberry Milk -3</li>
+              <li>Almond Milk -3</li>
+          </ul>
+          <li>Tea -2</li>
+          <li>Juice's</li>
+          <ul>
+              <li>Apple Juice -3</li>
+              <li>Orange Juice -3</li>
+              <li>Cranberry Juice -4</li>
+          </ul>
+          <li>Water -free</li>
+          <li>Smoothie's</li>
+          <ul>
+              <li>Strawberry Banana -9</li>
+              <li>Mango -7</li>
+              <li>Banana -7</li>
+              <li>Strawberry -8</li>
+          </ul>
+      </ul>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<div class="footer">
+  <img src=images/cake.png alt="FlapJax Diner Logo" width="100">
+  <h2>@FlapJax Diner | Powered by GitHub | Created by Melinda Fern, Josh Balbi, Hailey Roover, and Jack Flores</h2>
+</div>
+
+
+
+</body>

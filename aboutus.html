@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href=css/stylesheet.css>
+  <script>
+      var dropdownShown = false;
+      function showDropdown() {
+            let dropButton = document.getElementsByClassName("dropdownElems")[0];
+            if (!dropdownShown) {
+                dropButton.style.display = "block";
+                dropdownShown = true;
+            } else {
+                dropButton.style.display = "none";
+                dropdownShown = false;
+            }
+      }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+body {
+        background-image: url('images/check.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+
+</style>
+
+<body>
+
+<div class="navbar">
+  <a class="logo" href="./index.html" ><img src="images/flapjax.jpg" alt="Flapjax" height="66px"></a>
+  <a class="page" href=./order.html>Order</a>
+  <a class="page" href=./contact.html>Contact</a>
+  <a class="page" href=./hours.html>Hours</a>
+  <a class="page" href=./menu.html>Menu</a>
+  <a class="page" href=./reservation.html>Reservation</a>
+  <a class="page active" href=./aboutus.html>About Us</a>
+  <div class="dropdown">
+      <button class="hamburger" onclick="showDropdown()">&#9776;</button>
+      <div class="dropdownElems">
+          <a href="./order.html">Order</a>
+          <a href=./contact.html>Contact</a>
+          <a href=./hours.html>Hours</a>
+          <a href=./menu.html>Menu</a>
+          <a href=./reservation.html>Reservation</a>
+          <a href=./aboutus.html>About Us</a>
+      </div>
+  </div>
+</div>
+
+
+<br/>
+<br/>
+<h1> About Us </h1>
+
+<h2> History </h2>
+
+
+<p> Inspired by his fond memories of Sunday morning pancakes with his family, Jax Flores opened Flapjax Diner 1999 in Cambridge, Massachusetts, trusting that his family’s recipes would take his business quite far. For Jax, opening a diner was about more than just starting a business of his own– it was about cultivating a welcoming community and creating a sense of home within his neighborhood. As a self-taught baker and pastry chef, opening a restaurant was truly a risky endevour. With his humble beginnings, Jax could have never predicted the success of flapjax diner and the incredible friends, opportunities, and joy it would bring into his life. Now, as a restaurant owner of over two decades, Jax hopes to continue to make connections with his neighbors and spread the joy of breakfast foods. </p>
+<h2> Mission </h2>
+<p> Today, Flapjax diner stays true to its origins as independent breakfast diner. Although we specialize in our flapjacks, we have expanded our menu to satisfy all of your morning breakfast cravings. We are located near central square in Cambridge in a small floor of a beautiful brownstone building. We believe in community, inclusivity, and trust with our beloved customers. As a restaurant filled with people from all backgrounds and belifs, ee welcome everyone to dine with us or fill out an application. Flapjax diner is a place to energetically start your morning, catch up with family and friends, all while connecting over carefully-sourced ingredients, delicious coffee, and amazing people.</p>
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="footer">
+  <img src=images/cake.png alt="FlapJax Diner Logo" width="100">
+  <h2>@FlapJax Diner | Powered by GitHub | Created by Melinda Fern, Josh Balbi, Hailey Roover, and Jack Flores</h2>
+</div>
+
+
+</body>
