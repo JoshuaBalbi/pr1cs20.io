@@ -1,0 +1,175 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e8e8e8;
+}
+
+h1{
+    font-weight: 600;
+    color: #000000;
+    font-size: 48;
+    font-family: 'Vampiro One', cursive;
+}
+
+h2{
+    font-weight: 400;
+    color: #000000
+    font-size: 24;
+    font-family: 'Vampiro One', cursive;
+}
+
+h3{
+    font-weight: 200;
+    color: #000000;
+    font-size: 18;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* make navbar more responsive */
+@media screen and (min-width: 850px) {
+     .navbar a.page {
+         display: inline-block;
+         line-height: 70px;
+         font-size: 25px;
+     }
+
+     .dropdown {
+         display: none;
+     }
+ }
+
+/* make navbar and footer more responsive */
+ @media screen and (max-width: 850px) {
+     .navbar a.page {
+         display: none;
+     }
+
+     .dropdown {
+         display: block;
+     }
+
+     .navbar a:hover {
+         background-color: gray;
+         color: white;
+     }
+ }
+
+
+/* navbar class */
+ .navbar {
+     height: 70px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     background: rgb(255,255,255);
+ }
+
+/* navbar element style */
+.navbar a.page {
+    float: right;
+    background-color: rgb(255,255,255);
+    padding: 0 18px;
+    text-decoration: none;
+    color: grey;
+}
+
+/* logo */
+.navbar a.logo {
+    display: inline-block;
+    float: left;
+    padding: 0 18px;
+}
+
+.hamburger {
+     line-height: 65px;
+     background-position: black;
+     font-size: 40px;
+     color: grey;
+     text-decoration: none;
+     padding: 0 38px;
+ }
+
+ .dropdown {
+   float:right;
+ }
+
+ .dropdownElems {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 200px;
+   box-shadow: 0px 4px 16px 0px;
+ }
+
+ .dropdownElems a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+ .dropdownElems a:hover {background-color: #ddd;}
+
+ .dropdown:hover .dropdownElems {display: block;}
+
+
+ .dropdown:hover .hamburger {
+     background-color: gray;
+     color: white;
+ }
+
+/* active navbar page */
+.navbar a.active {
+    text-decoration: none;
+    color: #de5430;
+}
+
+/* hovering over a navbar element */
+.navbar a:hover {
+    background-color: grey;
+    color: white;
+
+}
+
+.column {
+  float: left;
+}
+.bigger{
+  float: left;
+  width: 50%;
+}
+
+.smaller{
+  float: left;
+  width: 25%;
+}
+
+.inbig{
+  float: right;
+  width: 60%;
+}
+
+.insmall{
+  float: left;
+  width: 35%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    background: #b5dac9;
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
